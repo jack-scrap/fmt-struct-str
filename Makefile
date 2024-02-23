@@ -25,7 +25,7 @@ clean:
 	rm $(BUILDDIR)/*.o $(EXEC)
 
 .PHONY: install
-install:
+install: all
 	cp $(EXEC) $(BINDIR)
 
 .PHONY: uninstall
